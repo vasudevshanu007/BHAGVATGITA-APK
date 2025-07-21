@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An offline Android app for reading Bhagavad Gita with Sanskrit shlokas and English translations" />
+  <meta name="author" content="Vasudev Kumar" />
+  <title>Bhagavad Gita App | Vasudev Kumar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="vasudev.css" />
+</head>
+<body>
+  
+  <div class="floating-om om-1">ॐ</div>
+  <div class="floating-om om-2">ॐ</div>
+
+  <header>
+    <div class="container header-content">
+      <div class="om-symbol">ॐ</div>
+      <h1>Bhagavad Gita App</h1>
+      <p class="tagline">Spiritual wisdom in your pocket – offline, elegant, and transformative</p>
+      <a href="#download" class="download-btn">
+        <i class="fas fa-download"></i>Download Now
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="features-section">
+      <h2 class="section-title">Divine Features</h2>
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-book-open"></i></div>
+          <h3>Complete Scripture</h3>
+          <p>All 18 chapters with original Sanskrit shlokas, phonetic transliterations, and accurate hindi translations.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-wifi-slash"></i></div>
+          <h3>Fully Offline</h3>
+          <p>Access timeless wisdom anytime, anywhere without needing an internet connection.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Lightweight Design</h3>
+          <p>Minimal storage footprint with elegant, distraction-free interface for spiritual focus.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="screenshots">
+      <h2 class="section-title">App Experience</h2>
+      <div class="screenshot-container">
+        <img src="pic4.jpg" alt="Gita App Chapter Selection" class="screenshot" />
+        <img src="pic2.jpg" alt="Gita App Verse Reading" class="screenshot" />
+        <img src="pic3.jpg" alt="Gita App Dark Mode" class="screenshot" />
+      </div>
+    </section>
+
+    <section class="download" id="download">
+      <h2 class="section-title">Download Now</h2>
+      <div class="download-content">
+        <p>Join thousands of seekers who have transformed their lives with daily Gita wisdom. The app is completely free with no ads or subscriptions.</p>
+        <div class="app-stats">
+          <div class="stat">
+            <div class="stat-number">18</div>
+            <div class="stat-label">Chapters</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Verses</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">1K+</div>
+            <div class="stat-label">Users</div>
+          </div>
+        </div>
+        <a href="bhagavad-gita.apk" download class="download-btn">
+          <i class="fas fa-download"></i>Get the App (Free)
+        </a>
+        <p><small>Compatible with Android 5.0+ | Size: 25.4 MB</small></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 class="footer-title">About the Developer</h3>
+        <div class="profile">
+          <img src="pic6.jpg" alt="Vasudev Kumar" class="profile-pic" />
+          <div>
+            <p><strong>Vasudev Kumar</strong></p>
+            <p>Full stack Web Developer & Dharma Seeker</p>
+          </div>
+        </div>
+        <p>Crafted with devotion to make the timeless wisdom of the Bhagavad Gita accessible to all.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3 class="footer-title">Connect</h3>
+        <div class="social-links">
+          <a href="https://www.instagram.com/vasudev_007sharma" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/vasudevshanu007" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/vasudev-kumar-46a654258/" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:vasudevshanu07@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2025 Bhagavad Gita App. All rights reserved. | Made with ❤️ and ॐ</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.animation = `fadeIn 1s ease forwards`;
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('section').forEach((section) => {
+        observer.observe(section);
+      });
+    });
+  </script>
+</body>
+</html>
